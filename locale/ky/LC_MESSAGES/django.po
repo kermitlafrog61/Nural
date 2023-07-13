@@ -3,60 +3,57 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-14 01:03+0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2023-07-14 02:18+0600\n"
+"PO-Revision-Date: 2023-07-14 02:34+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ky\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-
-#: templates/base.html:14
-msgid "Нур-Ал Энерго"
-msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Source-Language: ru;\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: templates/base.html:63
 msgid "Главная"
-msgstr ""
+msgstr "Негиз"
 
 #: templates/base.html:67
 msgid "О компании"
-msgstr ""
+msgstr "Компания жөнүндө"
 
 #: templates/base.html:71 templates/base.html:227 templates/index.html:228
 msgid "Проекты"
-msgstr ""
+msgstr "Долбоорлор"
 
 #: templates/base.html:75 templates/base.html:231 templates/index.html:358
 msgid "Новости"
-msgstr ""
+msgstr "Жаңылыктар"
 
 #: templates/base.html:79 templates/base.html:235
 msgid "Контакты"
-msgstr ""
+msgstr "Байланыштар"
 
 #: templates/base.html:126
 msgid "КЫР"
-msgstr ""
+msgstr "КЫР"
 
 #: templates/base.html:127
 msgid "РУС"
-msgstr ""
+msgstr "ОРУ"
 
 #: templates/base.html:155
-msgid "&copy; 2023 Нур-Ал-Энерго. <br> Все права защищены."
-msgstr ""
+msgid "Все права защищены."
+msgstr "Бардык укуктар корголгон."
 
 #: templates/base.html:197
 msgid "Адрес"
-msgstr ""
+msgstr "Дарек"
 
 #: templates/base.html:202
 msgid "Чокана Валиханова, 2 ст8 Bishkek, 720054"
@@ -64,100 +61,111 @@ msgstr ""
 
 #: templates/base.html:219
 msgid "Подробности"
-msgstr ""
+msgstr "Толук маалымат"
 
 #: templates/base.html:223
 msgid "О нас"
-msgstr ""
+msgstr "Биз жөнүндө"
 
 #: templates/base.html:242
 msgid "Почта колл-центра"
-msgstr ""
+msgstr "Чалуу борборунун почтасы"
 
 #: templates/base.html:245
 msgid "По любым вопросам обращаться к нам."
-msgstr ""
+msgstr "Маселелер боюнча биз менен байланышып."
 
 #: templates/base.html:251
 msgid "Отправить"
-msgstr ""
+msgstr "Жөнөтүү"
 
 #: templates/index.html:22
 msgid "Нур-Ал Энерго: Ведущий поставщик энергии."
-msgstr ""
+msgstr "Нур-Ал Энерго: Энергия менен камсыздоо боюнча алдыңкы."
 
 #: templates/index.html:25
 msgid "Гидроэлектростанция мощностью 18 мегаватт."
-msgstr ""
+msgstr "Кубаттуулугу 18 мегаватт болгон ГЭС."
 
 #: templates/index.html:30
 msgid "Узнать больше"
-msgstr ""
+msgstr "Көбүрөөк билүү үчүн"
 
 #: templates/index.html:32
 msgid "Связаться с нами"
-msgstr ""
+msgstr "Биз менен байланышуу"
 
 #: templates/index.html:100
 msgid "Чем мы занимаемся?"
-msgstr ""
+msgstr "Биз эмне кылып жатабыз?"
 
 #: templates/index.html:103
 msgid ""
 "Мы - компания Нур-Ал Энерго, занимающаяся гидроэнергетикой в Кыргызстане."
 msgstr ""
+"Биз Кыргызстандагы гидроэнергетика менен алектенген Нур-Ал Энерджи "
+"компаниясыбыз."
 
 #: templates/index.html:115
 msgid "24/7 Поддержка"
-msgstr ""
+msgstr "24/7 колдоо"
 
 #: templates/index.html:118
 msgid ""
 "Онлайн обслуживание, техническая поддержка Колл-центры всегда доступны и "
 "готовы проконсультировать по вопросам инвестиции 24/7."
 msgstr ""
+"Онлайн сервис, техникалык колдоо Байланыш борборлору ар дайым жеткиликтүү "
+"жана инвестиция маселелери боюнча 24/7 кеңеш берүүгө даяр."
 
 #: templates/index.html:131
 msgid "Экология в приоритете"
-msgstr ""
+msgstr "Экологияга артыкчылык берилет"
 
 #: templates/index.html:134
 msgid ""
 "Мы стремимся снизить вред нашей деятельности на окружающую среду и работаем "
 "над улучшением экологических показателей наших проектов."
 msgstr ""
+"Биз өз ишмердүүлүгүбүздүн айлана-чөйрөгө тийгизген таасирин азайтууга "
+"умтулабыз жана долбоорлорубуздун экологиялык көрсөткүчтөрүн жакшыртууга "
+"аракет кылабыз."
 
 #: templates/index.html:147
 msgid "Надежность и качество"
-msgstr ""
+msgstr "Ишенимдүүлүк жана сапат"
 
 #: templates/index.html:150
 msgid ""
 "Мы обеспечиваем качественное производство энергии, удовлетворяющее самым "
 "высоким стандартам качества."
 msgstr ""
+"Биз эң жогорку сапат стандарттарына жооп берген сапаттуу электр энергиясын "
+"өндүрөбүз."
 
 #: templates/index.html:163
 msgid "Эффективность и экономия"
-msgstr ""
+msgstr "Натыйжалуулук жана үнөмдөө"
 
 #: templates/index.html:166
 msgid ""
 "Мы создаем эффективные источники энергии, снижая экономические затраты наших "
 "клиентов и предлагая экологичные альтернативы."
 msgstr ""
+"Биз кардарларыбыздын экономикалык чыгымдарын азайтуу жана туруктуу "
+"альтернативаларды сунуш кылуу менен натыйжалуу энергия булактарын түзөбүз."
 
 #: templates/index.html:195
 msgid "Почему мы?"
-msgstr ""
+msgstr "Эмне үчүн биз?"
 
 #: templates/index.html:198
 msgid "Нур-Ал-Энерго: Гидроэнергетика в КР"
-msgstr ""
+msgstr "Нур-Аль-Энерго: Кыргыз Республикасындагы гидроэнергетика"
 
 #: templates/index.html:210
 msgid "Гидроэнергетика в КР"
-msgstr ""
+msgstr "Кыргыз Республикасындагы гидроэнергетика"
 
 #: templates/index.html:215
 msgid ""
@@ -167,6 +175,11 @@ msgid ""
 "к нам, чтобы узнать больше о том, как мы можем помочь сделать мир более "
 "чистым и устойчивым."
 msgstr ""
+"Биз гидроэнергетикалык кызматтарды көрсөтөбүз жана учурда Кыргызстандын бир "
+"нече аймактарында иштеп жатабыз. Биздин максат кардарларыбыз үчүн ишенимдүү "
+"жана туруктуу энергия булактарын камсыз кылуу болуп саналат. Дүйнөнү таза "
+"жана туруктуураак кылууга кантип жардам бере аларыбызды билүү үчүн бизге "
+"кошулуңуз."
 
 #: templates/index.html:233
 msgid ""
@@ -174,10 +187,14 @@ msgid ""
 "Каждый проект уникален и имеет свои особенности, но все они нацелены на "
 "предоставление надежного и эффективного источника энергии для наших клиентов."
 msgstr ""
+"Биз өлкө боюнча бир нече гидроэнергетикалык долбоорлордун үстүндө иштеп "
+"жатабыз. Ар бир долбоор уникалдуу жана өзүнүн өзгөчөлүктөрүнө ээ, бирок "
+"алардын бардыгы биздин кардарлар үчүн энергиянын ишенимдүү жана натыйжалуу "
+"булагын камсыз кылууга багытталган."
 
 #: templates/index.html:246
 msgid "Наша команда"
-msgstr ""
+msgstr "Биздин топ"
 
 #: templates/index.html:251
 msgid ""
@@ -185,11 +202,17 @@ msgid ""
 "компетентность и эффективность. Наша команда готова решать сложные задачи, "
 "обеспечивая надежность и качество наших проектов."
 msgstr ""
+"Бизде жогорку квалификациялуу адистер бар, алар биздин компетенттүүлүктү "
+"жана эффективдүүлүктү жогорулатат. Биздин команда долбоорлорубуздун "
+"ишенимдүүлүгүн жана сапатын камсыз кылуу менен татаал маселелерди чечүүгө "
+"даяр."
 
 #: templates/index.html:285
 msgid ""
 "Миссия компании — надежное обеспечение общества чистой и доступной энергией."
 msgstr ""
+"Компаниянын миссиясы – коомду таза жана жеткиликтүү энергия менен ишенимдүү "
+"камсыздоо."
 
 #: templates/index.html:289
 msgid ""
@@ -198,30 +221,35 @@ msgid ""
 "электроэнергии с фокусом на чистую энергию, развитие энергетики Дальнего "
 "Востока и рост ценности компании"
 msgstr ""
+"Стратегия ишенимдүү энергия менен камсыздоону жана энергетикалык "
+"объектилердин коопсуз иштешин камсыз кылууга, таза энергияга басым жасоо "
+"менен электр энергиясын өндүрүүнү туруктуу өнүктүрүүгө, Ыраакы Чыгыштын "
+"энергетика тармагын өнүктүрүүгө жана компаниянын наркынын өсүшүнө "
+"багытталган."
 
 #: templates/index.html:314
 msgid "мгВатт Мощность ГЭСа"
-msgstr ""
+msgstr "мгВт ГЭСтин кубаттуулугу"
 
 #: templates/index.html:322
 msgid "Счастливых клиентов"
-msgstr ""
+msgstr "Бактылуу кардарлар"
 
 #: templates/index.html:330
 msgid "Экспертных специалистов"
-msgstr ""
+msgstr "Эксперттик адистер"
 
 #: templates/index.html:338
 msgid "В Кыргызстане"
-msgstr ""
+msgstr "Кыргызстанда"
 
 #: templates/index.html:361
 msgid "Смотри актуальные новости Нур-Ал-Энерго."
-msgstr ""
+msgstr "Акыркы Нур-Аль-Энерго жаңылыктарын көрүңүз."
 
 #: templates/index.html:424
 msgid "Контакты компании Нур-Ал-Энерго"
-msgstr ""
+msgstr "Компания Нур-Аль-Энерго менен байланышат"
 
 #: venv/lib/python3.10/site-packages/ckeditor_uploader/forms.py:6
 msgid "Search files"
@@ -1342,8 +1370,8 @@ msgid ""
 "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
 "including the “Referrer-Policy: no-referrer” header, please remove them. The "
 "CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/csrf.py:136
@@ -1452,9 +1480,9 @@ msgstr ""
 #, python-format
 msgid ""
 "You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:229

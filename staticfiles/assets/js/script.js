@@ -36,7 +36,7 @@ function toggleActive(elementId) {
   var currentLang = window.location.pathname.split("/")[1];
   if (liLang && currentLang !== liLang) {
     var newPathname = window.location.pathname.replace(currentLang, liLang);
-    window.history.pushState(null, "", newPathname);
+    window.location.href = newPathname;
   }
 }
 
@@ -56,6 +56,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
 
 
 
