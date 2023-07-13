@@ -1,1 +1,276 @@
+{% load static %}
 
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Нур-Ал Энерго" %}</title>
+    <meta name="title" content="Nur-Al Energo">
+    <meta name="description" content="Nur-Al Energo">
+    <link rel="shortcut icon" href={% static 'favicon.svg' %} type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href={% static "assets/images/hero-bg.jpg" %}>
+    <link rel="preload" as="image" href={% static "assets/images/hero-slide-1.jpg" %}>
+    <link rel="preload" as="image" href={% static "assets/images/hero-slide-2.jpg" %}>
+    <link rel="preload" as="image" href={% static "assets/images/hero-slide-3.jpg" %}>
+
+    <!-- Template Main CSS File -->
+    <link href={% static 'assets/css/style.css' %} rel="stylesheet">
+</head>
+{% endblock head %}
+
+<body>
+
+    <!-- 
+    - #HEADER
+  -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+
+                <img src={% static "assets/images/Нур-Ал Энерго.svg" %} alt="Nur home" class="logo-light" />
+
+                <img src={% static "assets/images/Frame 1 (5).svg" %} alt="Adex home" class="logo-dark">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#" class="logo">
+                        <img src={% static "assets/images/logo-light.svg" %} width="74" height="24" alt="Adex home">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#" class="navbar-link">{% trans "Главная" %}</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">{% trans "О компании" %} </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">{% trans "Проекты" %}</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">{% trans "Новости" %}</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">{% trans "Контакты" %}</a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <a href="mailto:info@email.com" class="contact-link">evionplus@gmail.com</a>
+
+                    <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
+                </div>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <button id="khir-link" class="btn" onclick="toggleActive('khir-link')">{% trans "КЫР" %}</button>
+            <button id="rus-link" class="btn" onclick="toggleActive('rus-link')">{% trans "РУС" %}</button>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+    {% block content %}{% endblock content %}
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+        <div class="container grid-list">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <img src={% static "assets/images/Нур-Ал Энерго.svg" %} width="165" alt="Adex home">
+                </a>
+
+                <p class="footer-text">
+                    {% trans "&copy; 2023 Нур-Ал-Энерго. <br> Все права защищены." %}
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">{% trans "Адрес" %}</p>
+                </li>
+
+                <li>
+                    <address class="footer-text">
+                        {% trans "Чокана Валиханова, 2 ст8 Bishkek, 720054" %}
+                    </address>
+                </li>
+
+                <li>
+                    <a href="mailto:info@email.com" class="footer-link">evionplus@gmail.com</a>
+                </li>
+
+                <li>
+                    <a href="tel:001234567890" class="footer-link">0770 986 535</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">{% trans "Подробности" %}</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">{% trans "О нас" %}</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">{% trans "Проекты" %}</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">{% trans "Новости" %}</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">{% trans "Контакты" %}</a>
+                </li>
+
+            </ul>
+
+            <div class="footer-list">
+
+                <p class="h4 footer-list-title">{% trans "Почта колл-центра" %}</p>
+
+                <p class="footer-text">
+                    {% trans "По любым вопросам обращаться к нам." %}
+                </p>
+
+                <form action="" class="input-wrapper">
+                    <input type="text" name="email_address" placeholder="Email Address" required class="input-field">
+
+                    <button type="submit" class="submit-btn">{% trans "Отправить" %}</button>
+                </form>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src={% static "assets/js/script.js" %}></script>
+
+    <!-- 
+    - ionicon
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

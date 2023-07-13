@@ -1,524 +1,255 @@
+{% extends './base.html' %}
+
 {% load static %}
+
 {% load i18n %}
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Нур-Ал Энерго</title>
-  <meta name="title" content="Adex">
-  <meta name="description" content="This is a business agency html template made by codewithsadee">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css"> <!-- Это css -->
-  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
-</head>
-<body>
+{% block content %}
+<main>
+  <article>
 
-  <!-- 
-    - #HEADER
-  -->
-  <header class="header" data-header>
-    <div class="container">
+    <!-- 
+          - #HERO
+        -->
 
-      <a href="#" class="logo">
+    <section class="section hero has-bg-image" aria-label="home"
+      style="background-image: url({% static 'assets/images/hero-bg.jpg' %})">
+      <div class="container">
 
-        <img src="./assets/images/Нур-Ал Энерго.svg" alt="Nur home" class="logo-light" />
+        <div class="hero-content">
 
-        <img src="./assets/images/Frame 1 (5).svg" alt="Adex home" class="logo-dark">
-      </a>
+          <h1 class="h1 hero-title">{% trans "Нур-Ал Энерго: Ведущий поставщик энергии." %}</h1>
 
-      <nav class="navbar" data-navbar>
+          <p class="hero-text">
+            {% trans "Гидроэлектростанция мощностью 18 мегаватт." %}
+          </p>
 
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
-          </a>
+          <div class="btn-wrapper">
 
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
+            <a href="#" class="btn btn-primary">{% trans "Узнать больше" %}</a>
 
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">{% trans "Главная" %}</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">{% trans "О компании" %}  </a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">{% trans "Проекты" %}</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">{% trans "Новости" %}</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">{% trans "Контакты" %}</a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <a href="mailto:info@email.com" class="contact-link">evionplus@gmail.com</a>
-
-          <a href="tel:001234567890" class="contact-link">00 (123) 456 78 90</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <a href="#" id="khir-link" class="btn" onclick="toggleActive('khir-link')">КЫР</a>
-      <a href="#" id="rus-link" class="btn btn_active" onclick="toggleActive('rus-link')">РУС</a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero has-bg-image" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
-
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title">Нур-Ал Энерго: Ведущий поставщик энергии.</h1>
-
-            <p class="hero-text">
-              Гидроэлектростанция мощностью 18 мегаватт.
-            </p>
-
-            <div class="btn-wrapper">
-
-              <a href="#" class="btn btn-primary">Узнать больше</a>
-
-              <a href="#" class="btn btn-outline">Связаться с нами</a>
-
-            </div>
-
-          </div>
-
-          <div class="hero-slider" data-slider>
-
-            <div class="slider-inner">
-              <ul class="slider-container" data-slider-container>
-
-                <li class="slider-item">
-
-                  <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="https://cs14.pikabu.ru/post_img/big/2021/12/14/4/1639457209186510835.jpg" width="575" height="550" alt="" class="img-cover">
-                  </figure>
-
-                </li>
-
-                <li class="slider-item">
-
-                  <div class="hero-card">
-                    <figure class="img-holder" style="--width: 575; --height: 550;">
-                      <img src="https://img.kapital.kz/UZY87YPFqI8/bG9jYWw6Ly8vYy80L2YvZi8wLzBmZTlmZTE1MmM5YzRmY2E5YmI0ZGY0N2ZjZC5qcGc" width="575" height="550" alt="hero banner"
-                        class="img-cover">
-                    </figure>
-                  </div>
-
-                </li>
-
-                <li class="slider-item">
-
-                  <figure class="img-holder" style="--width: 575; --height: 550;">
-                    <img src="https://www.severelectro.kg/uploads/articles/mini/9331c7843640.jpg" width="575" height="550" alt="" class="img-cover">
-                  </figure>
-
-                </li>
-
-              </ul>
-            </div>
-
-            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
-              <ion-icon name="arrow-back"></ion-icon>
-            </button>
-
-            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </button>
+            <a href="#" class="btn btn-outline">{% trans "Связаться с нами" %}</a>
 
           </div>
 
         </div>
-      </section>
 
+        <div class="hero-slider" data-slider>
 
+          <div class="slider-inner">
+            <ul class="slider-container" data-slider-container>
 
+              <li class="slider-item">
 
+                <figure class="img-holder" style="--width: 575; --height: 550;">
+                  <img src="https://cs14.pikabu.ru/post_img/big/2021/12/14/4/1639457209186510835.jpg" width="575"
+                    height="550" alt="" class="img-cover">
+                </figure>
 
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service" aria-labelledby="service-label">
-        <div class="container">
-
-          <p class="section-subtitle" id="service-label">Чем мы занимаемся?</p>
-
-          <h2 class="h2 section-title">
-            Мы - компания Нур-Ал Энерго, занимающаяся гидроэнергетикой в Кыргызстане.
-          </h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">24/7 Поддержка</h3>
-
-                <p class="card-text">
-                  Онлайн обслуживание, техническая поддержка Колл-центры всегда доступны и готовы проконсультировать по вопросам инвестиции 24/7.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Экология в приоритете</h3>
-
-                <p class="card-text">
-                  Мы стремимся снизить вред нашей деятельности на окружающую среду и работаем над улучшением экологических показателей наших проектов.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Надежность и качество</h3>
-
-                <p class="card-text">
-                  Мы обеспечиваем качественное производство энергии, удовлетворяющее самым высоким стандартам качества.
-                </p>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
-                </div>
-
-                <h3 class="h4 card-title">Эффективность и экономия</h3>
-
-                <p class="card-text">
-                  Мы создаем эффективные источники энергии, снижая экономические затраты наших клиентов и предлагая экологичные альтернативы.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" aria-labelledby="about-label">
-        <div class="container">
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
-              class="w-100">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle" id="about-label">Почему мы?</p>
-
-            <h2 class="h2 section-title">
-              Нур-Ал-Энерго: Гидроэнергетика в КР
-            </h2>
-
-            <ul>
-
-              <li class="about-item">
-                <div class="accordion-card expanded" data-accordion>
-
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Гидроэнергетика в КР</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Мы предоставляем услуги в области гидроэнергетики и в настоящее время работаем в нескольких регионах Кыргызстана. Наша цель - предоставлять надежные и устойчивые источники энергии для наших клиентов. Присоединяйтесь к нам, чтобы узнать больше о том, как мы можем помочь сделать мир более чистым и устойчивым.
-                  </p>
-
-                </div>
               </li>
 
-              <li class="about-item">
-                <div class="accordion-card" data-accordion>
+              <li class="slider-item">
 
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
-
-                      <spna class="span h5">Проекты</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Мы работаем над несколькими гидроэнергетическими проектами по всей стране. Каждый проект уникален и имеет свои особенности, но все они нацелены на предоставление надежного и эффективного источника энергии для наших клиентов.
-                  </p>
-
+                <div class="hero-card">
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img
+                      src="https://img.kapital.kz/UZY87YPFqI8/bG9jYWw6Ly8vYy80L2YvZi8wLzBmZTlmZTE1MmM5YzRmY2E5YmI0ZGY0N2ZjZC5qcGc"
+                      width="575" height="550" alt="hero banner" class="img-cover">
+                  </figure>
                 </div>
+
               </li>
 
-              <li class="about-item">
-                <div class="accordion-card" data-accordion>
+              <li class="slider-item">
 
-                  <h3 class="card-title">
-                    <button class="accordion-btn" data-accordion-btn>
-                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                <figure class="img-holder" style="--width: 575; --height: 550;">
+                  <img src="https://www.severelectro.kg/uploads/articles/mini/9331c7843640.jpg" width="575" height="550"
+                    alt="" class="img-cover">
+                </figure>
 
-                      <spna class="span h5">Наша команда</spna>
-                    </button>
-                  </h3>
-
-                  <p class="accordion-content">
-                    Мы имеем высококвалифицированных специалистов, которые повышают нашу компетентность и эффективность. Наша команда готова решать сложные задачи, обеспечивая надежность и качество наших проектов.
-                  </p>
-
-                </div>
               </li>
 
             </ul>
-
           </div>
 
-        </div>
-      </section>
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
 
-
-
-
-
-      <!-- 
-        - #FEATURE
-      -->
-
-      <section class="section feature" aria-labelledby="feature-label">
-        <div class="container">
-
-          <figure class="feature-banner">
-            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
-              class="w-100">
-          </figure>
-
-          <div class="feature-content">
-
-            <p class="section-subtitle" id="feautre-label">Наша миссия</p>
-
-            <h2 class="h2 section-title">
-              Миссия компании — надежное обеспечение общества чистой и доступной энергией.
-            </h2>
-
-            <p class="section-text">
-              Стратегия направлена на обеспечение надежного энергоснабжения и безопасного функционирования энергообъектов, устойчивое развитие производства электроэнергии с фокусом на чистую энергию, развитие энергетики Дальнего Востока и рост ценности компании
-            </p>
-
-          </div>
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
 
         </div>
-      </section>
+
+      </div>
+    </section>
 
 
 
 
 
-      <!-- 
-        - #STATS
-      -->
+    <!-- 
+          - #SERVICE
+        -->
 
-      <section class="stats" aria-label="our stats">
-        <div class="container">
+    <section class="section service" aria-labelledby="service-label">
+      <div class="container">
 
-          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+        <p class="section-subtitle" id="service-label">{% trans "Чем мы занимаемся?" %}</p>
 
-            <li>
+        <h2 class="h2 section-title">
+          {% trans "Мы - компания Нур-Ал Энерго, занимающаяся гидроэнергетикой в Кыргызстане." %}
+        </h2>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <h3 class="h4 card-title">{% trans "24/7 Поддержка" %}</h3>
+
               <p class="card-text">
-                <span class="h1">18</span>
-
-                <spna class="span">мгВатт Мощность ГЭСа</spna>
+                {% trans "Онлайн обслуживание, техническая поддержка Колл-центры всегда доступны и готовы проконсультировать по вопросам инвестиции 24/7." %}
               </p>
-            </li>
 
-            <li>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <h3 class="h4 card-title">{% trans "Экология в приоритете" %}</h3>
+
               <p class="card-text">
-                <span class="h1">3230</span>
-
-                <spna class="span">Счастливых клиентов</spna>
+                {% trans "Мы стремимся снизить вред нашей деятельности на окружающую среду и работаем над улучшением экологических показателей наших проектов." %}
               </p>
-            </li>
 
-            <li>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <h3 class="h4 card-title">{% trans "Надежность и качество" %}</h3>
+
               <p class="card-text">
-                <span class="h1">218</span>
-
-                <spna class="span">Экспертных специалистов</spna>
+                {% trans "Мы обеспечиваем качественное производство энергии, удовлетворяющее самым высоким стандартам качества." %}
               </p>
-            </li>
 
-            <li>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+              </div>
+
+              <h3 class="h4 card-title">{% trans "Эффективность и экономия" %}</h3>
+
               <p class="card-text">
-                <span class="h1">№1</span>
-
-                <spna class="span">В Кыргызстане</spna>
+                {% trans "Мы создаем эффективные источники энергии, снижая экономические затраты наших клиентов и предлагая экологичные альтернативы." %}
               </p>
-            </li>
 
-          </ul>
+            </div>
+          </li>
 
-        </div>
-      </section>
+        </ul>
+
+      </div>
+    </section>
 
 
 
 
 
-      <!-- 
-        - #PROJECT
-      -->
+    <!-- 
+          - #ABOUT
+        -->
 
-      <section class="section project" aria-labelledby="project-label">
-        <div class="container">
+    <section class="about" aria-labelledby="about-label">
+      <div class="container">
 
-          <p class="section-subtitle" id="project-label">Новости</p>
+        <figure class="about-banner">
+          <img src={% static "assets/images/about-banner.png" %} width="800" height="580" loading="lazy"
+            alt="about banner" class="w-100">
+        </figure>
+
+        <div class="about-content">
+
+          <p class="section-subtitle" id="about-label">{% trans "Почему мы?" %}</p>
 
           <h2 class="h2 section-title">
-            Смотри актуальные новости Нур-Ал-Энерго.
+            {% trans "Нур-Ал-Энерго: Гидроэнергетика в КР" %}
           </h2>
 
-          <ul class="grid-list">
+          <ul>
 
-            <li>
-              <div class="project-card">
+            <li class="about-item">
+              <div class="accordion-card expanded" data-accordion>
 
-                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
-                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
-                    alt="Ligula tristique quis risus" class="img-cover">
-                </figure>
+                <h3 class="card-title">
+                  <button class="accordion-btn" data-accordion-btn>
+                    <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                <div class="card-content">
+                    <spna class="span h5">{% trans "Гидроэнергетика в КР" %}</spna>
+                  </button>
+                </h3>
 
-                  <h3 class="h3">
-                    <a href="#" class="card-title">ТМ "АЮ Энерджи" (ОсОО Нур Ал Энерго) заключила МеморандумЧ</a>
-                  </h3>
+                <p class="accordion-content">
+                  {% trans "Мы предоставляем услуги в области гидроэнергетики и в настоящее время работаем в нескольких регионах Кыргызстана. Наша цель - предоставлять надежные и устойчивые источники энергии для наших клиентов. Присоединяйтесь к нам, чтобы узнать больше о том, как мы можем помочь сделать мир более чистым и устойчивым." %}
+                </p>
 
-                  <p class="card-text">
-                    ТМ "АЮ Энерджи" (ОсОО Нур Ал Энерго) заключила Меморандум о взаимном сотрудничестве с узбекистанским заводом по производству электро-энергетического оборудования.
-                  </p>
+              </div>
+            </li>
 
-                  <ul class="card-meta-list">
+            <li class="about-item">
+              <div class="accordion-card" data-accordion>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                <h3 class="card-title">
+                  <button class="accordion-btn" data-accordion-btn>
+                    <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
 
-                      <time class="meta-text" datetime="2022-04-14">14 Apr 2022</time>
-                    </li>
+                    <spna class="span h5">{% trans "Проекты" %}</spna>
+                  </button>
+                </h3>
 
-                    <li class="card-meta-item">
-                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                <p class="accordion-content">
+                  {% trans "Мы работаем над несколькими гидроэнергетическими проектами по всей стране. Каждый проект уникален и имеет свои особенности, но все они нацелены на предоставление надежного и эффективного источника энергии для наших клиентов." %}
+                </p>
 
-                      <span class="meta-text">Coding</span>
-                    </li>
+              </div>
+            </li>
 
-                  </ul>
+            <li class="about-item">
+              <div class="accordion-card" data-accordion>
 
-                </div>
+                <h3 class="card-title">
+                  <button class="accordion-btn" data-accordion-btn>
+                    <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                    <spna class="span h5">{% trans "Наша команда" %}</spna>
+                  </button>
+                </h3>
+
+                <p class="accordion-content">
+                  {% trans "Мы имеем высококвалифицированных специалистов, которые повышают нашу компетентность и эффективность. Наша команда готова решать сложные задачи, обеспечивая надежность и качество наших проектов." %}
+                </p>
 
               </div>
             </li>
@@ -526,166 +257,176 @@
           </ul>
 
         </div>
-      </section>
+
+      </div>
+    </section>
 
 
 
 
 
-      <!-- 
-        - #CTA
-      -->
+    <!-- 
+          - #FEATURE
+        -->
 
-      <section class="cta" aria-label="call to action">
-        <div class="container">
+    <section class="section feature" aria-labelledby="feature-label">
+      <div class="container">
+
+        <figure class="feature-banner">
+          <img src={% static "assets/images/feature-banner.png" %} width="800" height="531" loading="lazy"
+            alt="feature banner" class="w-100">
+        </figure>
+
+        <div class="feature-content">
+
+          <p class="section-subtitle" id="feautre-label">Наша миссия</p>
 
           <h2 class="h2 section-title">
-            Контакты компании Нур-Ал-Энерго
+            {% trans "Миссия компании — надежное обеспечение общества чистой и доступной энергией." %}
           </h2>
 
+          <p class="section-text">
+            {% trans "Стратегия направлена на обеспечение надежного энергоснабжения и безопасного функционирования энергообъектов, устойчивое развитие производства электроэнергии с фокусом на чистую энергию, развитие энергетики Дальнего Востока и рост ценности компании" %}
+          </p>
+
         </div>
-      </section>
 
-    </article>
-  </main>
-
+      </div>
+    </section>
 
 
 
 
-  <!-- 
-    - #FOOTER
-  -->
 
-  <footer class="footer">
-    <div class="container grid-list">
+    <!-- 
+          - #STATS
+        -->
 
-      <div class="footer-brand">
+    <section class="stats" aria-label="our stats">
+      <div class="container">
 
-        <a href="#" class="logo">
-          <img src="./assets/images/Нур-Ал Энерго.svg" width="165" alt="Adex home">
-        </a>
-
-        <p class="footer-text">
-          &copy; 2023 Нур-Ал-Энерго. <br> Все права защищены.
-        </p>
-
-        <ul class="social-list">
+        <ul class="stats-card has-bg-image" style="background-image: url({% static 'assets/images/stats-bg.jpg' %})">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
+            <p class="card-text">
+              <span class="h1">18</span>
+
+              <spna class="span">{% trans "мгВатт Мощность ГЭСа" %}</spna>
+            </p>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
+            <p class="card-text">
+              <span class="h1">3230</span>
+
+              <spna class="span">{% trans "Счастливых клиентов" %}</spna>
+            </p>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
+            <p class="card-text">
+              <span class="h1">218</span>
+
+              <spna class="span">{% trans "Экспертных специалистов" %}</spna>
+            </p>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <p class="card-text">
+              <span class="h1">№1</span>
 
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+              <spna class="span">{% trans "В Кыргызстане" %}</spna>
+            </p>
           </li>
 
         </ul>
 
       </div>
+    </section>
 
-      <ul class="footer-list">
 
-        <li>
-          <p class="h4 footer-list-title">Адрес</p>
-        </li>
 
-        <li>
-          <address class="footer-text">
-            Чокана Валиханова, 2 ст8 Bishkek, 720054
-          </address>
-        </li>
 
-        <li>
-          <a href="mailto:info@email.com" class="footer-link">evionplus@gmail.com</a>
-        </li>
 
-        <li>
-          <a href="tel:001234567890" class="footer-link">0770 986 535</a>
-        </li>
+    <!-- 
+          - #PROJECT
+        -->
 
-      </ul>
+    <section class="section project" aria-labelledby="project-label">
+      <div class="container">
 
-      <ul class="footer-list">
+        <p class="section-subtitle" id="project-label">{% trans "Новости" %}</p>
 
-        <li>
-          <p class="h4 footer-list-title">Подробности</p>
-        </li>
+        <h2 class="h2 section-title">
+          {% trans "Смотри актуальные новости Нур-Ал-Энерго." %}
+        </h2>
 
-        <li>
-          <a href="#" class="footer-link">О нас</a>
-        </li>
+        <ul class="grid-list">
 
-        <li>
-          <a href="#" class="footer-link">Проекты</a>
-        </li>
+          {% for new in news %}
+          <li>
+            <div class="project-card">
 
-        <li>
-          <a href="#" class="footer-link">Новости</a>
-        </li>
+              <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                <img src={{ new.image.url }} width="560" height="350" loading="lazy"
+                  alt="Ligula tristique quis risus" class="img-cover">
+              </figure>
 
-        <li>
-          <a href="#" class="footer-link">Контакты</a>
-        </li>
+              <div class="card-content">
 
-      </ul>
+                <h3 class="h3">
+                  <a href="#" class="card-title">{{ new.title }}</a> <!-- FIXME -->
+                </h3>
 
-      <div class="footer-list">
+                <p class="card-text">
+                  {{ new.body|truncatewords:100|safe }}
+                </p>
 
-        <p class="h4 footer-list-title">Почта колл-центра</p>
+                <ul class="card-meta-list">
 
-        <p class="footer-text">
-          По любым вопросам обращаться к нам.
-        </p>
+                  <li class="card-meta-item">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-        <form action="" class="input-wrapper">
-          <input type="text" name="email_address" placeholder="Email Address" required class="input-field">
+                    <time class="meta-text" datetime="2022-04-14">{{ new.date }}</time>
+                  </li>
 
-          <button type="submit" class="submit-btn">Отправить</button>
-        </form>
+                  <li class="card-meta-item">
+                    <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="meta-text">{{ new.category.title }}</span>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+          </li>
+          {% endfor %}
+
+        </ul>
 
       </div>
-
-    </div>
-  </footer>
+    </section>
 
 
 
 
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!-- 
+      - #CTA
+    -->
 
-  <!-- 
-    - ionicon
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section class="cta" aria-label="call to action">
+      <div class="container">
 
-</body>
+        <h2 class="h2 section-title">
+          {% trans "Контакты компании Нур-Ал-Энерго" %}
+        </h2>
 
-</html>
+      </div>
+    </section>
+
+  </article>
+</main>
+{% endblock content %}

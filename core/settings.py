@@ -14,6 +14,7 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='*').split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -21,13 +22,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Apps
     'ckeditor',
-    'modeltranslation',
-
-    # My apps
     'news',
-    'content',
 ]
 
 MIDDLEWARE = [
@@ -99,8 +95,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'ru'
 
 LANGUAGES = (
-    ('ru', 'Russian'),
-    ('ky', 'Kyrgyz')
+    ('ru', 'РУС'),
+    ('ky', 'КЫР')
 )
 
 LOCALE_PATHS = (
@@ -130,7 +126,7 @@ STATICFILES_DIRS = [
 # Ckeditor
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_BASEPATH = "/staticfiles/ckeditor/ckeditor/"
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_FILENAME_GENERATOR = 'utils.get_filename'
 
 

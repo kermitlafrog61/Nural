@@ -16,16 +16,46 @@ function toggleActive(elementId) {
   var element = document.getElementById(elementId);
   var activeElements = document.getElementsByClassName("btn_active");
 
-  // Удаление класса "btn_active" у всех элементов, кроме текущего
+  // Remove "btn_active" class from all elements
   for (var i = 0; i < activeElements.length; i++) {
-    if (activeElements[i].id !== elementId) {
-      activeElements[i].classList.remove("btn_active");
-    }
+    activeElements[i].classList.remove("btn_active");
   }
 
-  // Добавление или удаление класса "btn_active" для текущего элемента
-  element.classList.toggle("btn_active");
+  // Add "btn_active" class to the clicked element
+  element.classList.add("btn_active");
+
+  // Retrieve the language code from the elementId
+  var liLang;
+  if (elementId === "khir-link") {
+    liLang = "ky";
+  } else if (elementId === "rus-link") {
+    liLang = "ru";
+  }
+
+  // Update the URL with the new language code if necessary
+  var currentLang = window.location.pathname.split("/")[1];
+  if (liLang && currentLang !== liLang) {
+    var newPathname = window.location.pathname.replace(currentLang, liLang);
+    window.history.pushState(null, "", newPathname);
+  }
 }
+
+// Activate the button based on the language present in the URL
+window.addEventListener("DOMContentLoaded", function () {
+  var currentLang = window.location.pathname.split("/")[1];
+  var buttonId;
+  if (currentLang === "ky") {
+    buttonId = "khir-link";
+  } else if (currentLang === "ru") {
+    buttonId = "rus-link";
+  }
+  if (buttonId) {
+    var button = document.getElementById(buttonId);
+    if (button) {
+      toggleActive(buttonId);
+    }
+  }
+});
 
 
 
@@ -71,7 +101,7 @@ window.addEventListener("scroll", function () {
 
 const sliders = document.querySelectorAll("[data-slider]");
 
-const initSlider = function(currentSlider) {
+const initSlider = function (currentSlider) {
 
   const sldierContainer = currentSlider.querySelector("[data-slider-container]");
   const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
@@ -105,7 +135,7 @@ const initSlider = function(currentSlider) {
    * PREVIOUS SLIDE
    */
 
-   const slidePrev = function () {
+  const slidePrev = function () {
 
     if (currentSlidePos <= 0) {
       currentSlidePos = sldierContainer.childElementCount - 1;

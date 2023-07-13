@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 20:20+0600\n"
+"POT-Creation-Date: 2023-07-14 01:03+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,209 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: templates/index.html:54
+#: templates/base.html:14
+msgid "Нур-Ал Энерго"
+msgstr ""
+
+#: templates/base.html:63
 msgid "Главная"
 msgstr ""
 
-#: templates/index.html:58
+#: templates/base.html:67
 msgid "О компании"
 msgstr ""
 
-#: templates/index.html:62
+#: templates/base.html:71 templates/base.html:227 templates/index.html:228
 msgid "Проекты"
 msgstr ""
 
-#: templates/index.html:66
+#: templates/base.html:75 templates/base.html:231 templates/index.html:358
 msgid "Новости"
 msgstr ""
 
-#: templates/index.html:70
+#: templates/base.html:79 templates/base.html:235
 msgid "Контакты"
+msgstr ""
+
+#: templates/base.html:126
+msgid "КЫР"
+msgstr ""
+
+#: templates/base.html:127
+msgid "РУС"
+msgstr ""
+
+#: templates/base.html:155
+msgid "&copy; 2023 Нур-Ал-Энерго. <br> Все права защищены."
+msgstr ""
+
+#: templates/base.html:197
+msgid "Адрес"
+msgstr ""
+
+#: templates/base.html:202
+msgid "Чокана Валиханова, 2 ст8 Bishkek, 720054"
+msgstr ""
+
+#: templates/base.html:219
+msgid "Подробности"
+msgstr ""
+
+#: templates/base.html:223
+msgid "О нас"
+msgstr ""
+
+#: templates/base.html:242
+msgid "Почта колл-центра"
+msgstr ""
+
+#: templates/base.html:245
+msgid "По любым вопросам обращаться к нам."
+msgstr ""
+
+#: templates/base.html:251
+msgid "Отправить"
+msgstr ""
+
+#: templates/index.html:22
+msgid "Нур-Ал Энерго: Ведущий поставщик энергии."
+msgstr ""
+
+#: templates/index.html:25
+msgid "Гидроэлектростанция мощностью 18 мегаватт."
+msgstr ""
+
+#: templates/index.html:30
+msgid "Узнать больше"
+msgstr ""
+
+#: templates/index.html:32
+msgid "Связаться с нами"
+msgstr ""
+
+#: templates/index.html:100
+msgid "Чем мы занимаемся?"
+msgstr ""
+
+#: templates/index.html:103
+msgid ""
+"Мы - компания Нур-Ал Энерго, занимающаяся гидроэнергетикой в Кыргызстане."
+msgstr ""
+
+#: templates/index.html:115
+msgid "24/7 Поддержка"
+msgstr ""
+
+#: templates/index.html:118
+msgid ""
+"Онлайн обслуживание, техническая поддержка Колл-центры всегда доступны и "
+"готовы проконсультировать по вопросам инвестиции 24/7."
+msgstr ""
+
+#: templates/index.html:131
+msgid "Экология в приоритете"
+msgstr ""
+
+#: templates/index.html:134
+msgid ""
+"Мы стремимся снизить вред нашей деятельности на окружающую среду и работаем "
+"над улучшением экологических показателей наших проектов."
+msgstr ""
+
+#: templates/index.html:147
+msgid "Надежность и качество"
+msgstr ""
+
+#: templates/index.html:150
+msgid ""
+"Мы обеспечиваем качественное производство энергии, удовлетворяющее самым "
+"высоким стандартам качества."
+msgstr ""
+
+#: templates/index.html:163
+msgid "Эффективность и экономия"
+msgstr ""
+
+#: templates/index.html:166
+msgid ""
+"Мы создаем эффективные источники энергии, снижая экономические затраты наших "
+"клиентов и предлагая экологичные альтернативы."
+msgstr ""
+
+#: templates/index.html:195
+msgid "Почему мы?"
+msgstr ""
+
+#: templates/index.html:198
+msgid "Нур-Ал-Энерго: Гидроэнергетика в КР"
+msgstr ""
+
+#: templates/index.html:210
+msgid "Гидроэнергетика в КР"
+msgstr ""
+
+#: templates/index.html:215
+msgid ""
+"Мы предоставляем услуги в области гидроэнергетики и в настоящее время "
+"работаем в нескольких регионах Кыргызстана. Наша цель - предоставлять "
+"надежные и устойчивые источники энергии для наших клиентов. Присоединяйтесь "
+"к нам, чтобы узнать больше о том, как мы можем помочь сделать мир более "
+"чистым и устойчивым."
+msgstr ""
+
+#: templates/index.html:233
+msgid ""
+"Мы работаем над несколькими гидроэнергетическими проектами по всей стране. "
+"Каждый проект уникален и имеет свои особенности, но все они нацелены на "
+"предоставление надежного и эффективного источника энергии для наших клиентов."
+msgstr ""
+
+#: templates/index.html:246
+msgid "Наша команда"
+msgstr ""
+
+#: templates/index.html:251
+msgid ""
+"Мы имеем высококвалифицированных специалистов, которые повышают нашу "
+"компетентность и эффективность. Наша команда готова решать сложные задачи, "
+"обеспечивая надежность и качество наших проектов."
+msgstr ""
+
+#: templates/index.html:285
+msgid ""
+"Миссия компании — надежное обеспечение общества чистой и доступной энергией."
+msgstr ""
+
+#: templates/index.html:289
+msgid ""
+"Стратегия направлена на обеспечение надежного энергоснабжения и безопасного "
+"функционирования энергообъектов, устойчивое развитие производства "
+"электроэнергии с фокусом на чистую энергию, развитие энергетики Дальнего "
+"Востока и рост ценности компании"
+msgstr ""
+
+#: templates/index.html:314
+msgid "мгВатт Мощность ГЭСа"
+msgstr ""
+
+#: templates/index.html:322
+msgid "Счастливых клиентов"
+msgstr ""
+
+#: templates/index.html:330
+msgid "Экспертных специалистов"
+msgstr ""
+
+#: templates/index.html:338
+msgid "В Кыргызстане"
+msgstr ""
+
+#: templates/index.html:361
+msgid "Смотри актуальные новости Нур-Ал-Энерго."
+msgstr ""
+
+#: templates/index.html:424
+msgid "Контакты компании Нур-Ал-Энерго"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/ckeditor_uploader/forms.py:6
