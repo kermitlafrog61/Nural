@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ckeditor',
-    'news',
+    'apps.news',
 ]
 
 MIDDLEWARE = [
@@ -42,7 +42,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'core' /'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -100,7 +100,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (
-    BASE_DIR / 'locale',
+    BASE_DIR / 'core' / 'locale',
 )
 
 TIME_ZONE = 'Asia/Bishkek'
@@ -119,7 +119,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'staticfiles',
+    BASE_DIR / 'core' / 'staticfiles',
 ]
 
 

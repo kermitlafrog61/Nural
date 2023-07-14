@@ -13,7 +13,7 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('', include('news.urls')),
+    path('', include('apps.news.urls')),
     path('', views.index, name='index'),
 )
 

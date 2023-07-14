@@ -10,13 +10,14 @@ services:
 
   api:
     build:
-      dockerfile: Dockerfile
+      dockerfile: docker/backend/Dockerfile
       context: .
     volumes:
       - static:/usr/src/app/static
       - media:/usr/src/app/media
       - .:/usr/src/app/
-    command: python manage.py runserver 0.0.0.0:8000
+    entrypoint: /usr/src/app/docker/backend/wsgi-entrypoint.sh
+    # command: python manage.py runserver 0.0.0.0:8000
     env_file:
       - .env
     ports:

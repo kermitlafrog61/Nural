@@ -1,4 +1,8 @@
 run:
-	docker compose up -d --build
+	sudo docker compose up -d --build
 down:
-	docker compose down
+	sudo docker compose down
+logs:
+	sudo docker compose logs
+bash:
+	sudo docker exec -it nural-api-1 bash

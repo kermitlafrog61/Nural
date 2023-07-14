@@ -13,8 +13,6 @@ COPY . .
 
 RUN apt-get update && apt-get install -y gettext
 
-RUN python manage.py collectstatic
-RUN python manage.py makemigrations
-RUN python manage.py compilemessages
+RUN chmod +x docker/backend/wsgi-entrypoint.sh
 
 EXPOSE 8000
