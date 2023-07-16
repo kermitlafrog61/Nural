@@ -17,7 +17,6 @@ services:
       - media:/usr/src/app/media
       - .:/usr/src/app/
     entrypoint: /usr/src/app/docker/backend/wsgi-entrypoint.sh
-    # command: python manage.py runserver 0.0.0.0:8000
     env_file:
       - .env
     ports:
