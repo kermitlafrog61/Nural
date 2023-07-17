@@ -11,4 +11,4 @@ done
 python manage.py compilemessages
 python manage.py collectstatic --noinput
 
-gunicorn core.wsgi --bind 0.0.0.0:8000
+python manage.py runserver 0.0.0.0:8000

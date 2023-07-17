@@ -43,8 +43,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'content' / 'templates',
-            BASE_DIR / 'news' /'templates'
+            BASE_DIR / 'apps' / 'content' / 'templates',
+            BASE_DIR / 'apps' / 'news' /'templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -122,7 +122,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 STATIC_ROOT = BASE_DIR / 'static'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'content' / 'staticfiles',
+    BASE_DIR / 'apps' / 'content' / 'staticfiles',
 ]
 
 
