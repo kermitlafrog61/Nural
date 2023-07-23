@@ -26,5 +26,5 @@ class Footer(models.Model):
     number = models.CharField(verbose_name="Номер Телефона", max_length=25)
     facebook = models.CharField(verbose_name="Facebook", max_length=255)
     twitter = models.CharField(verbose_name="Twitter", max_length=255)
-    instagram = models.CharField(verbose_name="Instagram", max_length=255)
+    instagram = models.CharField(verbose_name="Instagram", max_length=215)
     youtube = models.CharField(verbose_name="Youtube", max_length=255)
